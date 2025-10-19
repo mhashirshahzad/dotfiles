@@ -12,15 +12,30 @@ These are mostly taken from others and edited to match my preferences.
 ### SSH Keygen
 
 1. Generate an ssh-key 
-```ssh-keygen -t ed25519 -C "bongopoyo@proton.me"```
+```
+ssh-keygen -t ed25519 -C "bongopoyo@proton.me"
+```
 2. Start the agent
-```eval "$(ssh-agent -s)"```
+```
+eval "$(ssh-agent -s)"
+```
 3. Add the key
-```ssh-add ~/.ssh/id_ed25519```
+```
+
+ssh-add ~/.ssh/id_ed25519
+```
 4. Copy public key
-```cat ~/.ssh/id_ed25519.pub```
+```
+cat ~/.ssh/id_ed25519.pub
+```
 5. Add git email and user name
-```git config --global user.email "bongopoyo@proton.me"```
-```git config --global user.name "Bongo Poyo"```
+```
+git config --global user.email "bongopoyo@proton.me"
+```
+```
+git config --global user.name "Bongo Poyo"
+```
 6. Enable ssh for github
-```ssh -T git@github.com```
+```
+ssh -T git@github.com
+```
