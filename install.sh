@@ -50,4 +50,4 @@ echo "🎉 All done!"
 
 # Arch only
 echo "Downloading dependencies"
-sudo pacman -S ttf-jetbrains-mono-nerd maim polybar flameshot kitty picom 
+sudo pacman -S ttf-jetbrains-mono-nerd maim polybar flameshot kitty picom rofi

@@ -1,5 +1,6 @@
 #!/bin/bash
 dmenu_run -fn 'JetBrainsMono Nerd Font:size=12' -nb '#1e1e2e' -nf '#cdd6f4' -sb '#f5c2e7' -sf '#1e1e2e'
+# i3-dmenu-desktop -fn 'JetBrainsMono Nerd Font:size=12' -nb '#1e1e2e' -nf '#cdd6f4' -sb '#f5c2e7' -sf '#1e1e2e'
 
 # Theme
 set $rosewater #f5e0dc
