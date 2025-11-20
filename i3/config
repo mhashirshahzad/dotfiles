@@ -3,31 +3,24 @@ set $mod Mod4
 exec --no-startup-id picom
 # Font for window titles. Will also be used by the bar unless a different font
 
-font pango:FiraCode Nerd Font 14
-
-# Removing window title bars
-new_window none
-new_float none
+font pango:JetBrainsMono Nerd Font 14
 
 
+# removes the title bar but keeps the border
+default_border pixel 2 
 
 exec --no-startup-id dex --autostart --environment i3
 # polybar's config is at ~/.config/polybar/
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh 
 
 
-        # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
+# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-apple
-
-
-
-
-
 
 # Brightness
 bindsym XF86MonBrightnessUp exec brightnessctl set +10%
@@ -53,7 +46,7 @@ bindsym $mod+Shift+s exec flameshot gui
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id ~/.config/i3/dmenu-launch.sh
+bindsym $mod+d exec --no-startup-id ~/.config/i3/lanch_dmenu.sh
 #-fn "JetBrainsMono Nerd Font:size=12" \
 #          -nb $rosewater \
 #          -nf $mauve \
@@ -215,7 +208,7 @@ set $base      #1e1e2e
 set $mantle    #181825
 set $crust     #11111b
 # target                 title     bg    text      indicator    border
-client.focused           $mantle   $mauve $mantle  $rosewater $mauve
+client.focused           $pink     $mauve $pink    $rosewater $pink
 client.focused_inactive  $overlay0 $base  $text    $rosewater $overlay0
 client.unfocused         $overlay0 $base  $text    $rosewater $overlay0
 client.urgent            $peach    $base  $peach   $overlay0  $peach
