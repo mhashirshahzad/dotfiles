@@ -5,6 +5,8 @@ exec --no-startup-id picom
 
 font pango:JetBrainsMono Nerd Font 14
 
+# wallpaper
+exec_always --no-startup-id feh --bg-fill ~/.config/i3/wallpaper-catppuccin.png
 
 # removes the title bar but keeps the border
 default_border pixel 2 
