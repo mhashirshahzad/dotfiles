@@ -61,7 +61,7 @@ window {
   margin: 0px;
   padding: 10px;
   border: 0.18em solid @pink;
-  border-radius: 1em;
+  border-radius: 0.1em;
   background-color: @base;
   animation: slideIn 0.5s ease-in-out both;
 }
@@ -147,12 +147,12 @@ window {
 
 #entry arrow {
   border: none;
-  color: @lavender;
+  color: @pink;
 }
 
 /* Selected Entry */
 #entry:selected {
-  border: 0.11em solid @lavender;
+  border: 0.11em solid @pink;
 }
 
 #entry:selected #text {
