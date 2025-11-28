@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/mnt/ssd/Work/rust/rustlings'
+let g:netrw_dirhist_7='/home/bongo/.vim'
+let g:netrw_dirhist_6='/home/bongo/.vim/plugged'
+let g:netrw_dirhist_5='/home/bongo/.vim'
+let g:netrw_dirhist_4='/home/bongo'
+let g:netrw_dirhist_3='/home/bongo/.vim'
+let g:netrw_dirhist_2='/home/bongo'
+let g:netrw_dirhist_1='/home/bongo/Documents/dotfiles/vim'
