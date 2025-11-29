@@ -30,8 +30,8 @@ button {
 
 button:hover {
     background: inherit;
-    color: @mauve;
-    border-bottom: 2px solid @mauve;
+    color: @pink;
+    border-bottom: 2px solid @pink;
 }
 
 #workspaces button {
@@ -46,8 +46,8 @@ button:hover {
 
 #workspaces button.active {
     background-color: rgba(0, 0, 0, 0.3);
-    color: @mauve;
-    border-bottom: 2px solid @mauve;
+    color: @pink;
+    border-bottom: 2px solid @pink;
 }
 
 #workspaces button.urgent {
