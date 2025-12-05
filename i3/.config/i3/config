@@ -10,14 +10,14 @@ exec_always --no-startup-id dunst
 font pango:JetBrainsMono Nerd Font 14
 
 # wallpaper
-exec_always --no-startup-id feh --bg-fill ~/.config/i3/wallpaper-catppuccin.png
+exec_always --no-startup-id feh --bg-fill ~/.config/backgrounds/wallpaper-catppuccin.png
 
 # removes the title bar but keeps the border
-default_border pixel 2 
+default_border pixel 2
 
 exec --no-startup-id dex --autostart --environment i3
 # polybar's config is at ~/.config/polybar/
-exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh 
+exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
