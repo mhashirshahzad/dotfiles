@@ -1,4 +1,3 @@
-
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -72,14 +71,12 @@ return {
           end,
           desc = "Close buffer from tabline",
         },
-        
+
         ["<Leader>c"] = {
           function()
-            local bufs = vim.fn.getbufinfo({ buflisted = true })
+            local bufs = vim.fn.getbufinfo { buflisted = true }
             require("astrocore.buffer").close(0)
-            if not bufs[2] then
-              require("snacks").dashboard()
-            end
+            if not bufs[2] then require("snacks").dashboard() end
           end,
           desc = "Close buffer",
         },
