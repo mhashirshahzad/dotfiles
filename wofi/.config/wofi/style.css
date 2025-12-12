@@ -66,6 +66,7 @@ window {
   animation: slideIn 0.5s ease-in-out both;
 }
 
+
 /* Slide In */
 @keyframes slideIn {
   0% {
@@ -117,7 +118,7 @@ window {
 #input {
   margin: 5px 20px;
   padding: 10px;
-  border: none;
+  border: 0.1em solid @pink;
   border-radius: 0.1em;
   color: @text;
   background-color: @base;
