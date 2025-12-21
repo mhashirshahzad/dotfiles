@@ -61,7 +61,14 @@ return {
         -- navigate buffer tabs
         ["]b"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
         ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
-
+        ["<leader>fe"] = {
+          function()
+            require("telescope.builtin").diagnostics {
+              severity = vim.diagnostic.severity.ERROR,
+            }
+          end,
+          desc = "Find errors",
+        },
         -- mappings seen under group name "Buffer"
         ["<Leader>bd"] = {
           function()
