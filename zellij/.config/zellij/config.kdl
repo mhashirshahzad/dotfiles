@@ -287,7 +287,6 @@ web_client {
 // Default: default
 // 
 theme "catppuccin-macchiato"
- 
 // Choose the base input mode of zellij.
 // Default: normal
 // 
