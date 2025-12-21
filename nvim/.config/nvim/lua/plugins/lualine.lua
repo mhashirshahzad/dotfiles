@@ -10,9 +10,9 @@ return {
       },
       sections = {
         lualine_a = { "mode" },
-        lualine_b = { "branch", "diff", "diagnostics" },
-        lualine_c = { "filename" },
-        lualine_x = {
+        lualine_b = {
+          "branch",
+          "diff",
           {
             "diagnostics",
             sources = { "nvim_diagnostic" },
@@ -22,12 +22,14 @@ return {
               warn = " ",
             },
             on_click = function()
-              vim.diagnostic.setloclist {
+              require("telescope.builtin").diagnostics {
                 severity = vim.diagnostic.severity.ERROR,
               }
-              vim.cmd "lopen"
             end,
           },
+        },
+        lualine_c = { "filename" },
+        lualine_x = {
           "encoding",
           "fileformat",
           "filetype",
