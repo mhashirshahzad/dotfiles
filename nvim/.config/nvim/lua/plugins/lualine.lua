@@ -4,8 +4,8 @@ return {
   config = function()
     require("lualine").setup {
       options = {
-        section_separators = "",
         component_separators = "",
+        section_separators = "",
         globalstatus = true, -- single bottom bar
       },
       sections = {
@@ -31,10 +31,9 @@ return {
         lualine_c = { "filename" },
         lualine_x = {
           "encoding",
-          "fileformat",
           "filetype",
         },
-        lualine_y = { "progress" },
+        lualine_y = { "fileformat", "progress" },
         lualine_z = { "location" },
       },
     }
