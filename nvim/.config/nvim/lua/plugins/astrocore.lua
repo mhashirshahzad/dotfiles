@@ -69,6 +69,15 @@ return {
           end,
           desc = "Find errors",
         },
+        ["<leader>le"] = {
+          function()
+            vim.diagnostic.setloclist {
+              severity = vim.diagnostic.severity.ERROR,
+            }
+            vim.cmd "lopen"
+          end,
+          desc = "List errors",
+        },
         -- mappings seen under group name "Buffer"
         ["<Leader>bd"] = {
           function()
