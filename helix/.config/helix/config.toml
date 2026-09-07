@@ -52,8 +52,6 @@ separator = "│"
 diagnostics = ["hint", "info", "warning", "error"]
 workspace-diagnostics = ["hint", "info", "warning", "error"]
 
-[editor.soft-wrap]
-enable = true
 
 [editor.lsp]
 display-inlay-hints = true
