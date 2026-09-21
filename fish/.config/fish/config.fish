@@ -2,14 +2,15 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-export PATH="$HOME/.cargo/bin:$PATH"
+# Add paths only if they exist
+test -d ~/.cargo/bin; and fish_add_path ~/.cargo/bin
+test -d ~/.local/bin; and fish_add_path ~/.local/bin
+test -d ~/.spicetify; and fish_add_path ~/.spicetify
 
-# run starship
 starship init fish | source
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
 
-fish_add_path /home/bongo/.spicetify
+# rm fish greeting
+set -U fish_greeting
 
 function y
     set tmp (mktemp -t "yazi-cwd.XXXXXX")
