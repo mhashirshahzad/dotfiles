@@ -17,6 +17,9 @@ select = "underline"
 [editor.file-picker]
 hidden = true
 
+[editor.file-explorer]
+hidden = true
+
 [editor.statusline]
 left = [
     "mode",
