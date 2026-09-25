@@ -20,3 +20,6 @@ function y
     end
     command rm -f -- "$tmp"
 end
+# >>> xmake >>>
+test -f "/home/bongo/.xmake/profile" && source "/home/bongo/.xmake/profile"
+# <<< xmake <<<
