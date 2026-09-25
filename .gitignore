@@ -3,3 +3,27 @@ fish/.config/fish/completions/
 
 nvim_noplugin/.config/nvim/lazy-lock.json
 astro_nvim/.config/nvim/lazy-lock.json
+
+
+## suyu
+# Ignore all generated/runtime Suyu data
+suyu/.local/share/suyu/*
+
+# Keep keys
+!suyu/.local/share/suyu/keys/
+!suyu/.local/share/suyu/keys/*.keys
+
+# Keep user save data
+!suyu/.local/share/suyu/nand/
+!suyu/.local/share/suyu/nand/user/
+!suyu/.local/share/suyu/nand/user/save/
+!suyu/.local/share/suyu/nand/user/save/**
+
+# Keep firmware
+!suyu/.local/share/suyu/nand/system/
+!suyu/.local/share/suyu/nand/system/Contents/
+!suyu/.local/share/suyu/nand/system/Contents/registered/
+!suyu/.local/share/suyu/nand/system/Contents/registered/**
+
+# Ignore window-specific state
+suyu/.config/suyu/window_state.ini
