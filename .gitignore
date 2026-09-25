@@ -27,3 +27,4 @@ suyu/.local/share/suyu/*
 
 # Ignore window-specific state
 suyu/.config/suyu/window_state.ini
+suyu/.config/suyu/qt-config.ini
