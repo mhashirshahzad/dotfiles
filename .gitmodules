@@ -1,0 +1,3 @@
+[submodule "suyu/.local/share/suyu/nand/system/Contents/registered"]
+	path = suyu/.local/share/suyu/nand/system/Contents/registered
+	url = git@github.com:mhashirshahzad/suyu-firmware.git
