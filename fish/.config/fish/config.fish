@@ -23,3 +23,7 @@ end
 # >>> xmake >>>
 test -f "/home/bongo/.xmake/profile" && source "/home/bongo/.xmake/profile"
 # <<< xmake <<<
+
+
+# Added by Antigravity CLI installer
+set -gx PATH "/home/mr-pineapple/.local/bin" $PATH
