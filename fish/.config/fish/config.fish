@@ -24,6 +24,13 @@ end
 test -f "/home/bongo/.xmake/profile" && source "/home/bongo/.xmake/profile"
 # <<< xmake <<<
 
+if type -q helix
+    set -gx EDITOR helix
+    set -gx VISUAL helix
+else
+    set -gx EDITOR vi
+    set -gx VISUAL vi
+end
 
 # Added by Antigravity CLI installer
 set -gx PATH "/home/mr-pineapple/.local/bin" $PATH
