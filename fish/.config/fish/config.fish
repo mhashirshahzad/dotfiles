@@ -21,7 +21,7 @@ function y
     command rm -f -- "$tmp"
 end
 # >>> xmake >>>
-test -f "~/.xmake/profile" && source "~/.xmake/profile"
+test -f ~/.xmake/profile && source ~/.xmake/profile
 
 if type -q helix
     set -gx EDITOR helix
@@ -38,4 +38,4 @@ bind -M insert \e\x7f backward-kill-word
 bind -M default \e\x7f backward-kill-word
 
 # Added by Antigravity CLI installer
-set -gx PATH "~/.local/bin" $PATH
+set -gx PATH ~/.local/bin $PATH
