@@ -21,8 +21,7 @@ function y
     command rm -f -- "$tmp"
 end
 # >>> xmake >>>
-test -f "/home/bongo/.xmake/profile" && source "/home/bongo/.xmake/profile"
-# <<< xmake <<<
+test -f "~/.xmake/profile" && source "~/.xmake/profile"
 
 if type -q helix
     set -gx EDITOR helix
@@ -32,6 +31,11 @@ else
     set -gx VISUAL vi
 end
 
-# Added by Antigravity CLI installer
-set -gx PATH "/home/mr-pineapple/.local/bin" $PATH
 set -g fish_key_bindings fish_vi_key_bindings
+# Alt+Backspace: delete the previous word in insert mode
+bind -M insert \e\x7f backward-kill-word
+# Alt+Backspace: delete the previous word in normal mode
+bind -M default \e\x7f backward-kill-word
+
+# Added by Antigravity CLI installer
+set -gx PATH "~/.local/bin" $PATH
