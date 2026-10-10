@@ -91,7 +91,6 @@ format = '[ $user ]($style)'
 style = "fg:peach"
 format = "[$path ]($style)"
 truncation_length = 0
-truncation_symbol = "…/"
 
 [directory.substitutions]
 "Documents" = "󰈙 "
@@ -102,12 +101,10 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:teal"
-format = '[[$symbol $branch ](fg:mauve)]($style)'
+format = '[$symbol $branch ](fg:mauve)'
 
 [git_status]
-style = "bg:teal"
-format = '[[($all_status$ahead_behind )](fg:mauve)]($style)'
+format = '[($all_status$ahead_behind )](fg:mauve)'
 
 [nodejs]
 symbol = ""
@@ -156,7 +153,7 @@ format = '[$symbol( $context) ](fg:blue)'
 only_with_files = true
 
 [time]
-disabled = false
+disabled = true
 time_format = "%I:%M %p"
 format = '[ $time](fg:maroon)'
 
