@@ -56,7 +56,7 @@ crust = "#11111b"
 
 [username]
 show_always = true
-style_user = "fg:sapphire"
+style_user = "fg:pink"
 style_root = "fg:red"
 format = '[@$user ]($style)'
 
@@ -91,7 +91,8 @@ format = '[$symbol( $version) ](fg:teal)'
 [cpp]
 symbol = ""
 disabled = false
-format = '[$symbol( $version) ](fg:teal)'
+format = '[$symbol( $version(-$name)) ](fg:teal)'
+detect_folders = ['src', 'source', 'header']
 
 [rust]
 symbol = ""
