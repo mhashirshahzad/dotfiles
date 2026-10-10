@@ -34,3 +34,4 @@ end
 
 # Added by Antigravity CLI installer
 set -gx PATH "/home/mr-pineapple/.local/bin" $PATH
+set -g fish_key_bindings fish_vi_key_bindings
