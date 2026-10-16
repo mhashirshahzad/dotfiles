@@ -1,5 +1,7 @@
 set $mod Mod4
 
+exec --no-startup-id xset r rate 200 25
+
 exec_always --no-startup-id picom
 # start notification daemon
 exec_always --no-startup-id dunst
@@ -216,7 +218,7 @@ set $base      #1e1e2e
 set $mantle    #181825
 set $crust     #11111b
 # target                 title     bg    text      indicator    border
-client.focused           $pink     $mauve $text    $rosewater $pink
+client.focused           $pink     $mauve $crust    $rosewater $pink
 client.focused_inactive  $overlay0 $base  $text    $rosewater $overlay0
 client.unfocused         $overlay0 $base  $text    $rosewater $overlay0
 client.urgent            $peach    $base  $text   $overlay0  $peach

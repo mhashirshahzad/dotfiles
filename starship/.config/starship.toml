@@ -92,7 +92,6 @@ format = '[$symbol( $version) ](fg:teal)'
 symbol = ""
 disabled = false
 format = '[$symbol( $version(-$name)) ](fg:teal)'
-detect_folders = ['src', 'source', 'header']
 
 [rust]
 symbol = ""
